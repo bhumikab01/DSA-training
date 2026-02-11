@@ -1,9 +1,6 @@
 import java.util.*;
-
-// Class name must match the filename "reverse.java"
 public class reverse { 
-    
-    // Logic to reverse digits
+
     public int reverseNumber(int n) {
         long revNum = 0; 
         
@@ -13,7 +10,6 @@ public class reverse {
             n = n / 10;
         }
 
-        // Check for 32-bit integer overflow
         if (revNum > Integer.MAX_VALUE || revNum < Integer.MIN_VALUE) {
             return 0; 
         }
